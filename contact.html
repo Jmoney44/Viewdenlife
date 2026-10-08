@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="Get in touch with Viewdenlife for book-club visits, events, and reader notes.">
+    <title>Contact — Viewdenlife</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand-lockup" href="index.html" aria-label="Viewdenlife, home">
+          <span class="brand-logo" aria-hidden="true"><span>V</span><i></i></span>
+          <span class="wordmark">VIEWDENLIFE<span class="wordmark-dot">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link is-active" href="contact.html" aria-current="page">Contact</a>
+          <a class="button button-small button-dark nav-cta" href="https://example.com/book" target="_blank" rel="noopener noreferrer">Get the book <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero contact-hero section-shell">
+        <span class="eyebrow"><span class="eyebrow-line"></span> Notes are always welcome</span>
+        <h1>Let's start<br>a <em>conversation.</em></h1>
+        <p class="page-intro">A reader note, a book-club invitation, a hello from wherever you are—I'd love to hear from you.</p>
+      </section>
+
+      <section class="contact-section section-shell">
+        <div class="contact-aside">
+          <div class="contact-aside-mark" aria-hidden="true">✳</div>
+          <h2>Good things<br>begin with <em>hello.</em></h2>
+          <p>For book-club visits, event enquiries, or just to share what stayed with you after the last page.</p>
+          <div class="contact-email-label">A note in my inbox</div>
+          <a class="contact-email" href="mailto:hello@viewdenlife.com">hello@viewdenlife.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <form class="contact-form" data-contact-form>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="How should I address you?" required>
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+          <button class="button button-dark form-submit" type="submit">Open your email app <span aria-hidden="true">↗</span></button>
+          <p class="form-note" data-form-status aria-live="polite">Your email app will open with your message ready to send.</p>
+        </form>
+      </section>
+
+      <section class="contact-book">
+        <div class="contact-book-inner section-shell">
+          <span class="eyebrow eyebrow-light">Not read it yet?</span>
+          <h2>There's a place<br>for you <em>inside.</em></h2>
+          <a class="button button-light" href="https://example.com/book" target="_blank" rel="noopener noreferrer">Get <em>The Light We Keep</em> <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand-lockup footer-brand" href="index.html" aria-label="Viewdenlife, home">
+          <span class="brand-logo" aria-hidden="true"><span>V</span><i></i></span>
+          <span class="wordmark">VIEWDENLIFE<span class="wordmark-dot">.</span></span>
+        </a>
+        <span class="footer-note">Stories for the in-between.</span>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="https://example.com/book" target="_blank" rel="noopener noreferrer">Buy the book ↗</a>
+        </nav>
+        <span class="copyright">© <span data-year>2026</span> Viewdenlife</span>
+      </div>
+    </footer>
+  </body>
+</html>
