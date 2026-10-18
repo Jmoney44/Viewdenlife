@@ -12,6 +12,6 @@ const cards=[...document.querySelectorAll('.category-card')];
 const emptyState=document.getElementById('emptyState');
 let activeFilter='all';
 function filterCards(){const query=(searchInput.value||'').trim().toLowerCase();let visible=0;cards.forEach(card=>{const categoryMatch=activeFilter==='all'||card.dataset.category===activeFilter;const searchMatch=!query||(card.dataset.search+' '+card.innerText).toLowerCase().includes(query);const show=categoryMatch&&searchMatch;card.hidden=!show;if(show)visible++;});emptyState.hidden=visible>0;}
-chips.forEach(chip=>chip.addEventListener('click',()=>{activeFilter=chip.dataset.filter;chips.forEach(item=>item.classList.toggle('selected',item===chip));filterCards();}));
+chips.forEach(chip=>chip.addEventListener('click',()=>{activeFilter=chip.dataset.filter;chips.forEach(item=>{const selected=item===chip;item.classList.toggle('selected',selected);item.setAttribute('aria-pressed',String(selected));});filterCards();}));
 searchInput.addEventListener('input',filterCards);
 document.querySelectorAll('.category-link').forEach(button=>button.addEventListener('click',()=>{const category=button.dataset.categoryName;const email='viewdenlife@gmail.com';const subject=encodeURIComponent('Enquiry about '+category);const body=encodeURIComponent('Hello Viewdenlife, I would like to know more about the '+category+' category and current product availability.');window.location.href=`mailto:${email}?subject=${subject}&body=${body}`;}));
