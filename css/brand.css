@@ -1,8 +1,8 @@
 :root {
-  --rose: #752477;
-  --rose-dark: #4c1958;
-  --blush: #f2e8f3;
-  --line: #e8dcea;
+  --rose: #4f7d20;
+  --rose-dark: #365a17;
+  --blush: #edf5e5;
+  --line: #dce8d3;
   --green: #4f7d20;
 }
 
@@ -37,7 +37,7 @@
 
 .site-header .btn-primary {
   background: var(--rose);
-  box-shadow: 0 7px 18px rgba(117, 36, 119, .16);
+  box-shadow: 0 7px 18px rgba(79, 125, 32, .16);
 }
 
 .site-header .btn-primary:hover {
